@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.utama{
+    width: 100%;
+    height: 100vh;
+    background-color: #1B8755;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bungkus{
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #37d852;
+    border-radius: 10px;
+}
+.utama-kiri{
+    width: 31%;
+    height: 90vh;
+    background-color: #14ad5e;
+}
+.utama-kanan{
+    width: 69%;
+    height: 90vh;
+}
+.vl{
+    width: 0.2%;
+    height: 90vh;
+    background-color: #a2a2a2;
+}
+.kiri-atas{
+    width: 100%;
+    height: 8vh;
+    background-color: #187d4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bungkus-atas{
+    width: 95%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.atas-img{
+    width: 30%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+.atas-img p{
+    margin-left: 5px;
+    color: aliceblue;
+    font-style: oblique;
+}
+.atas-img img{
+    width: 35%;
+    border-radius: 50px;
+}
+.atas-icon{
+    width: 40%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.atas-icon img{
+    width: 12%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.cari{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bungkus-cari{
+    width: 95%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cari-bungkus{
+    width: 88%;
+    height: 4vh;
+    background-color: #187d4e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cari-kiri{
+    width: 15%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cari-input{
+    width: 85%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::placeholder{
+    color: aliceblue;
+}
+.cari-input input{
+    width: 100%;
+    height: 4vh;
+    background: transparent;
+    border: 0px;
+    color: aliceblue;
+    font-size: 20px;
+    outline: none;
+    font-style: oblique;
+}
+.cari-kiri img{
+    width: 30%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.cari-img{
+    width: 10%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center     ;
+}
+.cari-img img{
+    width: 50%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.bungkus-chat{
+    width: 100%;
+    height: 76vh;
+    overflow: scroll;
+}
+.bungkus-chat::-webkit-scrollbar{
+    display: none;
+}
+.kotak-chat{
+    width: 100%;
+    height: 8vh;
+    background-color: #187d4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.kotak-chat1{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.kotak-chat:hover{
+    background-color: #39ec57;
+}
+.kotak-chat1:hover{
+    background-color: #39ec57;
+}
+.kotak-chat.active,
+.kotak-chat1.active {
+    background-color: #39ec57;
+}
+.chat-utama{
+    width: 95%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-img{
+    width: 6vh;
+    min-width: 6vh;
+    height: 6vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.chat-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.chat-tengah{
+    width: 60%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+.chat-text h3{
+    color: aliceblue;
+    font-style: oblique;
+}
+
+.chat-text p{
+    color: aliceblue;
+    font-style: inherit;
+}
+
+.chat-waktu{
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-style: oblique;
+}
+
+.bungkus-kanan{
+    width: 100%;
+    height: 8vh;
+    background-color: #187d4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kanan-utama{
+    width: 98%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kanan-img{
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.kanan-img h3{
+    color: aliceblue;
+}
+.online {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2px;
+    white-space: nowrap;
+}
+.online h3 {
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.online p {
+    margin: 0;
+    font-size: 13px;
+    color: aliceblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.img-img{
+    width: 6vh;
+    min-width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.img-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.kanan-cari{
+    width: 8%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.kanan-cari img{
+    width: 25%;
+    cursor: pointer;
+}
+.utama-cakap{
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(—Pngtree—abstract\ doodle\ art_13118592.png);
+    background-size: cover;
+}
+.isi-chat-utama h2{
+    width: 100%;
+    padding: 30px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40pt;
+    color: aliceblue;
+}
+.chat-messages{
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-sizing: border-box;
+}
+.chat-messages .message{
+    align-self: flex-end;
+    max-width: 70%;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 20px;
+    color: aliceblue;
+    font-style: inherit;
+    word-wrap: break-word;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+.bungkus-pesan{
+    width: 100%;
+    height: 8vh;
+    background-color: #187d4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.pesan-utama{
+    width: 98%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pesan-kiri{
+    width: 5%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesan-kiri img{
+    width: 50%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.pesan-tengah{
+    width: 90%;
+    height: 6vh;
+    background-color: #14ad5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.pesan-input{
+    width: 98%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.emot{
+    width: 5%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.emot p{
+    font-size: 22px;
+}
+.emoji-picker{
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    width: calc(100% - 10px);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 6px;
+    background-color: #0044A6;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    z-index: 5;
+}
+.emoji-picker button{
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.emoji-picker button:hover{
+    background-color: rgba(255,255,255,0.18);
+    transform: scale(1.08);
+}
+.hidden{
+    display: none;
+}
+.input-bawah{
+    width: 95%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.input-bawah input{
+    width: 100%;
+    height: 4vh;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: aliceblue;
+    font-style: inherit;
+}
+.pesan-kanan{
+    width: 5%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pesan-kanan img{
+    width: 50%;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
+}
+.isi-chat-utama{
+    width: 100%;
+    height: 73.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 40px;
+}
