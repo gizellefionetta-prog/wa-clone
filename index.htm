@@ -83,7 +83,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Kang Bangunan</h3>
-                                    <p>Siap om laksanakan</p>
+                                    <p class="p1">Siap om laksanakan</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -115,7 +115,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Masa Lalu</h3>
-                                    <p>gk app, nanti aja ktemu</p>
+                                    <p class="p1">gk app, nanti aja ktemu</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -131,7 +131,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Mantan Temen</h3>
-                                    <p>sedang mengetik...</p>
+                                    <p class="p1">masa lalu broo</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -147,7 +147,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Pak RT</h3>
-                                    <p>wkwkwkwkw oke</p>
+                                    <p class="p1">wkwkwkwkw oke</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -163,7 +163,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Mantan Pak RT 10</h3>
-                                    <p>y</p>
+                                    <p class="p1">y</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -179,7 +179,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Ibu Rt 23</h3>
-                                    <p>kurang tau juga saya yaa</p>
+                                    <p class="p1">kurang tau juga saya yaa</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -227,7 +227,7 @@
                             <div class="chat-tengah">
                                 <div class="chat-text">
                                     <h3>Kang Onar</h3>
-                                    <p>ppp</p>
+                                    <p class="p1">ppp</p>
                                 </div>
                             </div>
                             <div class="chat-waktu">
@@ -363,6 +363,7 @@
         // Ambil data dari chat item yang dipilih
         const chatImg = chatElement.querySelector(".chat-img img");
         const chatName = chatElement.querySelector(".chat-text h3").innerText;
+        const chatMessage = chatElement.querySelector(".chat-text p").innerText;
 
         //AI line 368-377
         // Update header kanan dengan data yg dipilih
@@ -382,8 +383,20 @@
 
         // Tampilkan placeholder lagi
         if (placeholder) {
-            placeholder.style.display = "flex";
+            placeholder.style.display = "none";
         }
+
+        // Tambahkan pesan dari chat-text p
+        const message = document.createElement("div");
+        message.classList.add("message");
+        if (chatMessage.includes("✔")) {
+            message.classList.add("outgoing");
+        } else {
+            message.classList.add("incoming");
+        }
+        message.innerText = chatMessage;
+        messagesContainer.appendChild(message);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
     //AI line 387-416
     // Event listener untuk setiap chat item

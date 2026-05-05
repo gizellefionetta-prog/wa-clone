@@ -331,7 +331,6 @@
     box-sizing: border-box;
 }
 .chat-messages .message{
-    align-self: flex-end;
     max-width: 70%;
     padding: 12px 16px;
     background-color: rgba(255, 255, 255, 0.18);
@@ -341,6 +340,14 @@
     font-style: inherit;
     word-wrap: break-word;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+.chat-messages .message.incoming{
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.chat-messages .message.outgoing{
+    align-self: flex-end;
+    background-color: rgba(255, 255, 255, 0.18);
 }
 .bungkus-pesan{
     width: 100%;
@@ -458,7 +465,7 @@
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(98%) contrast(108%);
 }
-.isi-chat-utama{
+.isi-chat-utama{ 
     width: 100%;
     height: 73.8vh;
     display: flex;
